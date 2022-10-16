@@ -3,7 +3,7 @@
 /**
  * main - prints the alphabet in lower case
  * follow by a new line except q and e
- * Reture: always 0
+ * Return: Always 0
  */
 int main(void)
 {
@@ -11,8 +11,9 @@ int main(void)
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		if (i != 'e' && i != 'q')
-			putchar(i);
+		if (i == 'e' || i == 'q')
+			continue;
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
