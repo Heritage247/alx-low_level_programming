@@ -9,6 +9,9 @@
 
 int _isdigit(int c)
 {
+	int y = 0;
+
+
 	if (c >= '0' && c <= '9')
 
 	{
@@ -16,6 +19,6 @@ int _isdigit(int c)
 	}
 	else
 	{
-		return (0);
+		return (y);
 	}
 }
