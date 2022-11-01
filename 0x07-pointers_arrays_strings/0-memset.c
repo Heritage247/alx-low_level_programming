@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _memset - fills the first n bytes of the memory area
+ * _memset - copy memory area
  * @s: a pointer to the memory area to be filled
  * @c: the character to fill the memory area with
  * @n: the number of bytes to be filled
- * descriptinon _memset: over there
- * Return: a pointer to the filled memory area @s
+ * description _memset: over there
+ * Return: memory area replaced
  */
 
 void *_memset(void *s, int c, size_t n)
