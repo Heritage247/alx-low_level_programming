@@ -2,14 +2,14 @@ include "main.h"
 
 /**
  * _memcpy - copies @n bytes from the memory area pointed
- * @dest: a pointer to the memory area tp copy @src into.
+ * @dest: a pointer to the memory area to copy @src into.
  * @src: the source buffer to copy char from
  * @n: the number of bytes to copy from @src
  *
  * Return: a pointer to the destination buffer @dest
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(void *dest, const void *src,  size_t n)
 {
 	unsigned int index;
 	unsigned char *destination = dest;
