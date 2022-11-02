@@ -2,20 +2,20 @@
 
 /**
  * _memset - copy memory area
- * @s: a pointer to the memory area to be filled
+ * @s: pointer to the memory area to be filled
  * @c: the character to fill the memory area with
  * @n: the number of bytes to be filled
- * description _memset: over there
- * Return: memory area replaced
+ * Return: dest
  */
 
-void *_memset(void *s, int c, size_t n)
+char *_memset(char *s, char b, unsigned int n);
 {
-	unsigned int index;
-	unsigned char *memory = s, value = c;
+	unsigned int i;
 
-	for (index = 0; index < n; index++)
-		memory[index] = value;
+	for (i = 0; i < n; i++)
+	{
+		*(s + i) = b; /* add 1 position s*/
+	}
 
-	return (memory);
+	return (s);
 }

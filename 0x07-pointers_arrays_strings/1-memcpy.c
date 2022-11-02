@@ -6,7 +6,7 @@
  * @src: source memory area
  * @n: bytes from memory copy
  *
- * Return: memory area replaced
+ * Return: the pointer to dest
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -17,5 +17,6 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		dest[a] = src[a];
 	}
+
 	return (dest);
 }
