@@ -3,17 +3,18 @@
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: number
- * @i: iterator
- * Return: a number
+ * Return: sqrt_recursion
  */
 
-int _sqrt_recursion(int n, int i)
+int _sqrt_recursion(int n)
 {
-	int squre = i * i;
+	int i = 0;
 
-	if (square > n)
+	if (i < 0)
 		return (-1);
-	if (square == n)
-		return (i);
-	return (_sqrt(n, i + 1));
+
+	else
+	{
+		return (_evaluate(i, n));
+	}
 }
