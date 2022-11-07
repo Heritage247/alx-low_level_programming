@@ -34,5 +34,4 @@ while (position < size) /* while for array*/
 position++;
 }
 return (buffer);
-i}
 }
