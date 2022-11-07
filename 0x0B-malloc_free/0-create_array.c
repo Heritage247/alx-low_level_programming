@@ -18,9 +18,7 @@ return (NULL);
 }
 
 /* define values with malloc */
-
 buffer = (char *) malloc(size * sizeof(c));
-
 if (buffer == 0)
 {
 return (NULL);
@@ -34,4 +32,5 @@ while (position < size) /* while for array*/
 position++;
 }
 return (buffer);
+}
 }
